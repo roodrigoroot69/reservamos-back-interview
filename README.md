@@ -26,7 +26,7 @@ minimum temperature for the next 7 days (include only cities into results)
 - Docker Compose
 
 
-## Instructions for Start Project
+## Instructions for Run Project
 
 Note: For this project **Docker** is Required
 
@@ -47,7 +47,7 @@ Note: For this project **Docker** is Required
 
 Get All Cities that match the given param
 
-**URL** : `/destiny/?city=acapulco`
+**URL** : `http://localhost:8000/destiny/?city=acapulco`
 
 **Method** : `GET`
 
