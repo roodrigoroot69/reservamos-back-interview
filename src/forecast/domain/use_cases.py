@@ -39,7 +39,7 @@ class CityOpenWeatherGetter(ICityClient):
 
     def execute(self):
         forecast_cities = []
-        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
             future_to_city = {executor.submit(self._process_city_forecast, city): city for city in self.coordinates_cities}
             for future in concurrent.futures.as_completed(future_to_city):
                 try:

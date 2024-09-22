@@ -18,7 +18,6 @@ class ForecastCityGetter:
             coordinates_cities = self.coordinates.execute()
         except CityDoesNotFoundException as cdnfe:
             return {'message': str(cdnfe)}
-
         city_openweather_getter = self.cities_class(
             coordinates_cities=coordinates_cities
         )

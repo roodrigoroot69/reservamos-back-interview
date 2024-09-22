@@ -16,7 +16,7 @@ class ForecastDestinyAPIView(APIView):
         city = request.GET.get('city')
         if not city:
             return Response(
-                {"error": "City parameter is required"},
+                {"message": "City parameter is required"},
                 status=status.HTTP_400_BAD_REQUEST
             )
         coordinates_reservamos = CoordinatesReservamosGetter(
