@@ -14,7 +14,7 @@ class ICoordinatesClient(ABC):
 
 @dataclass
 class ICityClient(ABC):
-    cities: List
+    coordinates_cities: List
 
     @abstractmethod
     def execute(self):
