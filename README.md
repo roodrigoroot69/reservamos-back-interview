@@ -158,8 +158,18 @@ The citye entered does not found
 
 ```
 
+## Tests
+I'm using unittest(From Python) and TestCase(Django) for tests.
+Maybe this could cause confusion because only have tests in app for the service Forecast
 
+Taking as reference the book "Architecture Pattern with Python" the tests for domain should live in service layer why?
+Because we don't use the Bussines Rules outside Service (for this case ForecastCityGetter), if we create more tests for live in domain we could be a lot of test repeated and unncesaries.
 
+For this reazon all test are for ForecastCityGetter class, because only in this point i call other class or function (Bussines Rules)
 
+If we modify the Domain (Bussines Rules) also service can be failed, because the App module(Forecast) or proccess depende of the Domain.
 
+#### Run Test
+
+```docker compose run back python manage.py test```
 
