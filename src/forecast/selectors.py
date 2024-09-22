@@ -41,8 +41,6 @@ class ForecastCityGetter:
 
     def _transform_forecast_dto(self, forecast_cities) -> None:
         for forecast in forecast_cities:
-            print(forecast)
             for fori in forecast['list']:
                 data = WeatherDTO.from_api_response(fori, forecast)
                 self.cities.append(data)
-            break
