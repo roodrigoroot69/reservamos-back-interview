@@ -17,6 +17,7 @@ using geographic coordinates, and show the results in metric units.`
 
 An endpoint that return a list of all cities that match the given param including the maximum and
 minimum temperature for the next 7 days (include only cities into results)
+**Note:** Curently Open Weather Map does not longer offers data of the next 7 days, only offers for 5 days in a Free plan
 
 
 ## Stack
@@ -39,6 +40,9 @@ Note: For this project **Docker** is Required
 #### To Stop Project
 ```docker compose stop```
 
+**Note:** For this project i preferred don't use a .env for save environment variables, because is for a tecnical interview,
+in a real project i will use a .env file or maybe other service like SSM or AppConfig to save and get environment variables
+for the project.
 
 ## Consume Endpoint
 
