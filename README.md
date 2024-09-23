@@ -18,7 +18,7 @@ using geographic coordinates, and show the results in metric units.`
 An endpoint that return a list of all cities that match the given param including the maximum and
 minimum temperature for the next 7 days (include only cities into results)
 **Note:** Curently Open Weather Map does not longer offers data of the next 7 days, only offers for 5 days in a Free plan
-
+![Open Weather Map Plans](https://github.com/roodrigoroot69/reservamos-back-interview/blob/main/images/plans.png "Open Weather Map Plans")
 
 ## Stack
 - Django
