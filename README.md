@@ -57,8 +57,6 @@ Get All Cities that match the given param
 
 **Auth required** : NO
 
-**Data constraints**
-
 
 ## Success Response
 
